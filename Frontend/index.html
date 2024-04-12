@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="logo"><img src="./images/logo.svg" alt="" /></div>
+      <div class="text-container">
+        <div class="lead-text">
+          We're
+          <br />
+          coming
+          <br />
+          soon
+        </div>
+        <p class="sub-text">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form
+          onsubmit="event.preventDefault(); validateEmail();"
+          class="email-container"
+        >
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            class="email"
+          />
+          <span class="error-icon hide"
+            ><img src="./images/icon-error.svg" alt="Error icon"
+          /></span>
+          <button class="submit" type="submit">
+            <img src="./images/icon-arrow.svg" alt="" />
+          </button>
+        </form>
+        <p class="message hide">Enter a valid email adderss</p>
+      </div>
+      <div class="image-container"></div>
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a target="_blank" href="https://twitter.com/JajaDavid8"
+            >Star, Inc</a
+          >
+        </p>
+      </footer>
+    </main>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
